@@ -59,17 +59,7 @@ class HomeLayout extends StatelessWidget
                  AppCubit.get(context).insertToDatabase(
                      title: titleController.text,
                      time: timecontroller.text,
-                     date: datecontroller.text);
-                 // insertToDatabase(
-                 //   title: titleController.text,
-                 //   time: timecontroller.text,
-                 //   date: datecontroller.text,
-                 // ).then((value) {
-                 //   Navigator.pop(context);
-                 //   // setState(() {
-                 //   //   isBottomSheetShown = false;
-                 //   // });
-                 // });
+                     date: datecontroller.text); 
                }
 
              } else
@@ -250,27 +240,6 @@ floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
                    color: isSelected[3] ? Colors.red : Colors.grey,),
                ],
              ),
-             // type: BottomNavigationBarType.fixed,
-             // currentIndex: AppCubit.get(context).currentIndex,
-             //
-             // onTap: (index) {
-             //   AppCubit.get(context).changeIndex(index);
-             //   print(AppCubit.get(context).currentIndex);
-             // },
-             // items: [
-             //   BottomNavigationBarItem( // index 0
-             //     icon: Icon(Icons.menu),
-             //     label: 'Tasks',
-             //   ),
-             //   BottomNavigationBarItem( // index 1
-             //     icon: Icon(Icons.check),
-             //     label: 'Done',
-             //   ),
-             //   BottomNavigationBarItem( //index 2
-             //     icon: Icon(Icons.archive_outlined),
-             //     label: 'Archived',
-             //   ),
-             // ],
            ),
          );
         },
